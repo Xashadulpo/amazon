@@ -1,0 +1,27 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  scrollbar-width: thin;
+   scrollbar-color: rgb(214, 202, 202) #F3F4F6
+}
+.screen-max-width {
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  position: relative;
+  max-width: 1120px;
+}
+@layer utilities {
+  .product_button{
+    @apply w-full capitalize h-10 bg-gradient-to-t from-yellow-400 to-yellow-100 rounded-md border-none text-base active:to-yellow-500 }
+  .checkout_button{
+    @apply w-5/6 p-2 text-xs md:text-sm capitalize h-auto bg-gradient-to-t from-yellow-400 to-yellow-100 rounded-md border-none active:to-yellow-500 }
+
+  }
